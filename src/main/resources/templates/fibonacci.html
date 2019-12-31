@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Calculating Fibonacci Sequence</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<table>
+    <th:block th:each="fibo, stats : ${fibonacciSequence}">
+        <tr>
+            <td th:text="${stats.count}" style="text-align: right">...</td>
+            <td>|</td>
+            <td th:text="${#numbers.formatInteger(fibo, 1, 'POINT')}">...</td>
+        </tr>
+    </th:block>
+</table>
+
+<script language="JavaScript" type="text/javascript">
+    setTimeout(function () {
+        window.location.reload();
+        window.scrollTo(0,document.body.scrollHeight);
+    }, 10000);
+</script>
+</body>
+</html>
