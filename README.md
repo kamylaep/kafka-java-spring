@@ -2,7 +2,7 @@
 
 Small (and very simple) Spring Boot App that consumes and produces Kafka events.
 
-This app produces the Fibonacci Sequence and send it to a Kafka topic (`fibonacci`). There is also an consumer that 
+This app produces the Fibonacci Sequence and send it to a Kafka topic (`fibonacci`). There is also a consumer that 
 can be accessed using `http://localhost:9191/kafka-java-spring/fibonacci`.
 
 ## Build
